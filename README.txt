@@ -1,0 +1,6 @@
+This project is part of a school subject where I learned to benefit from robotic process automation (RPA) in order to make it easier for me to complete tasks in real life.
+Data extraction is made for multiple files (in this case I only used 3 Pdf files) but it can be executed with many more if added to the source folder.
+I have included a "ForEach" activity at the beginning of the sequence in order for the process to loop into all the files of the folder. 
+In my case, my source folder with all pdfs is located in Desktop and the folders name is "RPA_XhoanaBello". Using the "Attach Window" activity I selected the elements I want to extract (in my case FlightNumber, FlightDate and Total). 
+The most important decision here is that on the options menu of the attached window, I decided that the selector is not going to be directed by the title of the document. This way, no matter what name the pdf file has, the process is going to execute it. 
+In order to avoid future bugs with different files, I decided to add a "Close Application" activity in the end. This way the process will not collapse in case some files are not closing are not allowing the process to continue extracting data from the next files.
